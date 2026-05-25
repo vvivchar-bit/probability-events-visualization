@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Візуалізація подій у теорії ймовірностей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="hero">
+            <h1>Візуалізація операцій над подіями</h1>
+            <p>
+                Практичний приклад до теми «Основні поняття теорії ймовірностей».
+                Технічний контроль перевіряє чотири вироби.
+            </p>
+        </section>
+
+        <section class="task-card">
+            <h2>Позначення</h2>
+            <p><strong>Я</strong> — якісний виріб</p>
+            <p><strong>Б</strong> — бракований виріб</p>
+            <p>
+                Простір елементарних подій Ω складається з усіх можливих результатів
+                перевірки чотирьох виробів.
+            </p>
+        </section>
+
+        <section class="controls">
+            <button data-event="omega">Ω — усі події</button>
+            <button data-event="A">A</button>
+            <button data-event="B">B</button>
+            <button data-event="notA">Ā</button>
+            <button data-event="notB">B̄</button>
+            <button data-event="union">A + B</button>
+            <button data-event="intersection">AB</button>
+        </section>
+
+        <section class="content-grid">
+            <div class="panel">
+                <h2>Простір елементарних подій Ω</h2>
+                <div id="eventsGrid" class="events-grid"></div>
+            </div>
+
+            <div class="panel explanation-panel">
+                <h2>Пояснення</h2>
+                <div id="explanation">
+                    Натисни кнопку, щоб побачити відповідну подію.
+                </div>
+            </div>
+        </section>
+
+        <section class="summary">
+            <h2>Суть прикладу</h2>
+            <p>
+                Ця візуалізація показує, як операції над подіями можна представити
+                у вигляді множин. Елементарні події підсвічуються залежно від того,
+                до якої події вони належать.
+            </p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
